@@ -1,7 +1,7 @@
 <h3> Message Index </h3>
 <ul>
   <% posts.each( function(post) { %>
-    <li> <a href="#/posts/<%= post.id %>"> <%= post.get('title') %></a> - <%= post.get('created_at') %></li>
+    <li> <a href="#/posts/<%= post.id %>"> <%= post.get('title') %></a> - <%= post.get('created_at') %> <span> <a href="#/posts/<%= post.id %>/edit">Edit Message</a></li>
   <% })%>
 </ul>
 

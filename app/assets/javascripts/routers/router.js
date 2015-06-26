@@ -32,12 +32,21 @@ VhMessageBoard.Routers.Router = Backbone.Router.extend({
       var post = this.posts.getOrFetch(id);
       var v = new VhMessageBoard.Views.MessageShow({
         post: post,
+        posts: this.posts
       });
       this._swapView(v);
     },
 
-    edit: function(){
-
+    edit: function(id){
+      debugger
+      // var post = this.posts.getOrFetch(id);
+      var post = this.posts.get(id);
+      post.fetch();
+      var v = new VhMessageBoard.Views.MessageEdit({
+        posts: this.posts,
+        post: post
+      });
+      this._swapView(v)
     },
 
     _swapView: function(view) {
