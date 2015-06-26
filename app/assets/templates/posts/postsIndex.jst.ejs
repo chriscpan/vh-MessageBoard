@@ -1,0 +1,9 @@
+<h3> Message Index </h3>
+<ul>
+  <% posts.each( function(post) { %>
+    <li><%= post.get('content') %> - <%= post.get('created_at') %></li>
+  <% })%>
+</ul>
+
+
+<a href="#/posts/new">New Message</a>

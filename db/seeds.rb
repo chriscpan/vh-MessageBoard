@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+message1 = Post.create({
+    username: "Juno",
+    title: "Dog",
+    content: "I like to steal my master's chipotle"
+  });

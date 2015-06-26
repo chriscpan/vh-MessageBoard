@@ -4,7 +4,12 @@ window.VhMessageBoard = {
   Views: {},
   Routers: {},
   initialize: function() {
-    alert('Hello from Backbone!');
+    var posts = new VhMessageBoard.Collections.Posts();
+    new VhMessageBoard.Routers.Router({
+      $rootEl: $('#main'),
+      posts: posts
+    });
+    Backbone.history.start();
   }
 };
 
