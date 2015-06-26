@@ -20,9 +20,7 @@ VhMessageBoard.Routers.Router = Backbone.Router.extend({
     },
 
     new: function(){
-      // debugger
       var post = new VhMessageBoard.Models.Post();
-      // debugger
       var v = new VhMessageBoard.Views.MessageNew({
         post: post,
         posts: this.posts
@@ -30,8 +28,12 @@ VhMessageBoard.Routers.Router = Backbone.Router.extend({
       this._swapView(v);
     },
 
-    show: function(){
-
+    show: function(id){
+      var post = this.posts.getOrFetch(id);
+      var v = new VhMessageBoard.Views.MessageShow({
+        post: post,
+      });
+      this._swapView(v);
     },
 
     edit: function(){
