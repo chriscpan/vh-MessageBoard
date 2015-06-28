@@ -1,0 +1,35 @@
+#background{
+  margin: 10px;
+}
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.bar {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+.index-link {
+  float: right;
+  // background-color: none;
+}
+
+.new-post-link {
+  float: left;
+  background-color: grey;
+}
+
+.nav-link {
+  padding: 4px 10px;
+  color: white;
+  margin: 7px 25px 7px 10px;
+  border-radius: 5px;
+}
+
+
+.nav-link:hover{
+  color: white;
+}
