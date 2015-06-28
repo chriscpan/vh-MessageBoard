@@ -1,9 +1,15 @@
-<h3> Message Index </h3>
-<ul>
-  <% posts.each( function(post) { %>
-    <li> <a href="#/posts/<%= post.id %>"> <%= post.get('title') %></a> - <%= post.get('created_at') %> <span> <a href="#/posts/<%= post.id %>/edit">Edit Message</a></li>
-  <% })%>
-</ul>
-
-
-<a href="#/posts/new">New Message</a>
+<% posts.each( function(post) { %>
+  <div class='index-page group'>
+    <div class='edit-post'>
+      <a href="#/posts/<%= post.id %>/edit">Edit Message</a>
+    </div>
+    <div class='title'>
+      <a href="#/posts/<%= post.id %>"> <%= post.get('title') %></a>
+      <br>
+      <span>Posted <%= post.get('created_at') %> by <%= post.get('username') %></span>
+    </div>
+    <div class='delete-btn'>
+      <a href="#">Delete</a>
+    </div>
+   </div>
+<% })%>
