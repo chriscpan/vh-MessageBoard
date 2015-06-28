@@ -1,20 +1,26 @@
 <div class='new-post-page'>
-  <h3>Submit a Posting</h3>
-
+  <div class='new-post-title'>
+    <h3>Submit a Posting</h3>
+  </div>
   <form class='message-new-form'>
     <div class='post-new-error'></div>
-    <label>Title
-      <input type="text" name="title" value="Emergency!">
-    </label>
-    <br>
-    <label>Name
-      <input type="text" name="username" placeholder="ViralHeatGuest">
-    </label>
-    <br>
-    <label>
-      <textarea name="content" rows="8" cols="40"></textarea>
-    </label>
-
-    <input class='new-message' type="submit" value="Create New Message!">
+    <div class='new-post-data group'>
+      <div class='new-post-inputs'>
+        <label for="title" class='labels'>Title</label>
+        <br>
+        <input type="text" id="title" name="title" value="Emergency!">
+        <br>
+        <label for="username" class='labels'>Name</label>
+        <br>
+        <input type="text" id="username" name="username" placeholder="ViralHeatGuest">
+      </div>
+      <div class='new-post-content'>
+        <label> Message </label>
+        <textarea name="content" rows="8" cols="40"></textarea>
+      </div>
+    </div>
+    <div class='message-new-submit group'>
+      <input class='new-message' type="submit" value="Submit">
+    </div>
   </form>
 </div>

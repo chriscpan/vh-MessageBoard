@@ -1,0 +1,72 @@
+label {
+  margin-bottom: none;
+}
+.new-post-page {
+  background-color: #eee;
+  padding: 10px 20px;
+  margin-top: 5px;
+  border-radius: 5px;
+  color: #555;
+  font-weight: 700
+}
+
+.new-post-page h3 {
+}
+
+.new-post-title {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.new-post-inputs {
+  color: #777;
+  float:left;
+  width: 50%;
+}
+
+.labels {
+  margin-top: 5px;
+  line-height: 1;
+}
+
+.new-post-inputs input {
+  width: 90%;
+  // border-radius: 5px;
+}
+
+.new-post-content {
+  float:right;
+  width: 50%
+}
+
+.new-post-content label {
+  width: 100%;
+  margin-top: 5px;
+  line-height: 1;
+  color: #777;
+}
+.new-post-content textarea {
+  width: 100%;
+  resize: none;
+  border: none;
+}
+
+.new-message {
+  float: right;
+}
+
+.message-new-submit {
+  margin-top: 6px;
+}
+.message-new-submit input {
+  outline: none;
+  background-color: #FFCC00;
+  color: white;
+  padding-right: 30px;
+  padding-left: 30px;
+  border: none;
+}
+
+.message-new-submit input:hover {
+  background-color: #FF5050;
+}
