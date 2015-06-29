@@ -14,7 +14,6 @@
 //= require jquery_ujs
 //= require jquery.serializejson.min
 //= require bootstrap
-//= require turbolinks
 //= require underscore
 //= require backbone
 //= require vh_message_board

@@ -43,7 +43,7 @@ VhMessageBoard.Routers.Router = Backbone.Router.extend({
         posts: this.posts,
         post: post
       });
-      this._swapView(v)
+      this._swapView(v);
     },
 
     _swapView: function(view) {
