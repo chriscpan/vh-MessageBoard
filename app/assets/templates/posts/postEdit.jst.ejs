@@ -1,18 +1,28 @@
-<h3>Editing a Posting</h3>
+<div class='new-post-page'>
+  <div class='new-post-title'>
+    <h3>Editing a Posting</h3>
+  </div>
 
-<form class='message-new-form'>
-  <div class='post-new-error'></div>
-  <label>Title
-    <input type="text" name="title" value="<%= post.get('title') %>">
-  </label>
-  <br>
-  <label>Name
-    <input type="text" name="username" value="<%= post.get('username') %>">
-  </label>
-  <br>
-  <label>
-    <textarea name="content" rows="8" cols="40"><%=post.get('content')%></textarea>
-  </label>
-
-  <input class='new-message' type="submit" value="Edit Message!">
-</form>
+  <form class='message-new-form'>
+    <div class='post-new-error'></div>
+    <div class='new-post-data group'>
+      <div class='new-post-inputs'>
+        <label for="title" class='labels'>Title</label>
+        <br>
+        <input type="text" id="title" name="title" value="<%= post.get('title') %>">
+        <br>
+        <label for="username" class='labels'>Name</label>
+        <br>
+        <input type="text" id="username" name="username" value="<%= post.get('username') %>">
+      </div>
+      <div class='new-post-content'>
+        <label> Message </label>
+        <textarea name="content" rows="8" cols="40"><%= post.get('content') %></textarea>
+      </div>
+    </div>
+    <div class='message-new-submit group'>
+      <input class='new-message' type="submit" value="Submit">
+      <input class='delete-message' type=submit value='Delete'>
+    </div>
+  </form>
+</div>
