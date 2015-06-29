@@ -65,12 +65,14 @@ module Api
       if hours.to_i > 12
         hours = hours.to_i % 12
         is_pm = true
+      else
+        hours = hours.to_i
       end
       day_or_night = ""
       if is_pm
         day_or_night = "PM"
       else
-        day_ornight = "AM"
+        day_or_night = "AM"
       end
       minutes = time[1]
       date_string = "#{month} #{date.last}, #{date.first} @ #{hours}:#{minutes} #{day_or_night}"
