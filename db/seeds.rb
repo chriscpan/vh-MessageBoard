@@ -11,6 +11,6 @@
     username: Faker::Name.name,
     title: Faker::Company.bs,
     content: Faker::Lorem.paragraph(4, true, 10),
-    time: "06 28, 2015 @ 9:16 PM"
+    time: "June 28, 2015 @ 9:16 PM"
     })
 }
