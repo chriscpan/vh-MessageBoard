@@ -22,15 +22,12 @@ VhMessageBoard.Views.MessageNew = Backbone.View.extend({
   createPost: function(event) {
     event.preventDefault();
     var data = $(event.target).serializeJSON();
-    debugger
     this.post.save(data, {
       success: function() {
-        debugger
         this.posts.add(this.listing, {merge: true});
         Backbone.history.navigate('/', {trigger: true});
       }.bind(this),
       error: function(model, response) {
-        debugger
         var err = $('.post-new-error');
         err.html($('<p>All inputs must be filled!</p>'));
       }.bind(this)
