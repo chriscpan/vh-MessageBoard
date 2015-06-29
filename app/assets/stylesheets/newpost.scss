@@ -7,15 +7,12 @@ label {
   margin-top: 5px;
   border-radius: 5px;
   color: #555;
-  font-weight: 700
-}
-
-.new-post-page h3 {
 }
 
 .new-post-title {
   border-bottom: 1px solid #ddd;
   margin-bottom: 10px;
+  font-weight: 700
 }
 
 .new-post-inputs {
@@ -49,6 +46,7 @@ label {
   width: 100%;
   resize: none;
   border: none;
+  margin-top: 5px;
 }
 
 .new-message {

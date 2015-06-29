@@ -1,0 +1,38 @@
+.new-post-title div {
+  color: #999;
+  font-size: 11px;
+  transform: translateY(-5px);
+}
+
+.show-header {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.edit-post-title {
+  margin-left: 50px;
+  margin-bottom: 15px;
+}
+
+.edit-message {
+  float:right;
+}
+
+.message-body {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.message-edit-submit input {
+  outline: none;
+  background-color: #bbb;
+  color: white;
+  padding-right: 30px;
+  padding-left: 30px;
+  border: none;
+}
+
+.message-edit-submit input:hover {
+  background-color: #FF5050;
+}
