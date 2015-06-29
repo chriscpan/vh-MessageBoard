@@ -1,3 +1,3 @@
 VhMessageBoard.Models.Post = Backbone.Model.extend({
-  url: '/api/posts'
+  urlRoot: 'api/posts'
 });

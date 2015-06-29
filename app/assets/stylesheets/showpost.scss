@@ -10,6 +10,18 @@
   font-weight: 700;
 }
 
+.show-header i {
+  float: left;
+  width: 50px;
+  line-height: 50px;
+  font-size: 2.0em;
+  text-align: center;
+}
+
+.show-header i:hover {
+  cursor: pointer;
+  color: green;
+}
 .edit-post-title {
   margin-left: 50px;
   margin-bottom: 15px;

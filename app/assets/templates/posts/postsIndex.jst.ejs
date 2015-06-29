@@ -1,15 +1,16 @@
 <% posts.each( function(post) { %>
   <div class='index-page group'>
     <div class='edit-post'>
-      <a href="#/posts/<%= post.id %>/edit">Edit Message</a>
+      <a href="#/posts/<%= post.id %>/edit"><i class="glyphicon glyphicon-search"></i>
+</a>
     </div>
     <div class='title'>
       <a href="#/posts/<%= post.id %>"> <%= post.get('title') %></a>
       <br>
-      <span>Posted <%= post.get('created_at') %> by <%= post.get('username') %></span>
+      <span>Posted <%= post.get('time') %> by <%= post.get('username') %></span>
     </div>
     <div class='delete-btn'>
-      <a href="#">Delete</a>
+      <button class='delete' data-id="<%= post.id %>">X</button>
     </div>
    </div>
 <% })%>

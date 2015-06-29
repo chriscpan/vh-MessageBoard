@@ -2,7 +2,8 @@ VhMessageBoard.Views.MessageEdit = Backbone.View.extend({
   template: JST['posts/postEdit'],
 
   events: {
-    'submit form': 'updatePost'
+    'submit form': 'updatePost',
+    'click .delete-message': 'destroyPost'
   },
 
   initialize: function(options) {
@@ -21,19 +22,26 @@ VhMessageBoard.Views.MessageEdit = Backbone.View.extend({
 
   updatePost: function(event) {
     event.preventDefault();
-    var data = $(event.target).serializeJSON();
     debugger
+    var data = $(event.target).serializeJSON();
     this.post.save(data, {
       success: function() {
-        // debugger
         this.posts.add(this.post, {merge: true});
         Backbone.history.navigate("posts/" + this.post.id, {trigger: true});
       }.bind(this),
       error: function() {
-        // debugger
         var err = $('.error-edit-message');
-        err.html($('<p>Something went wrong</p>'));
+        err.html($('<p>All inputs must be filled!</p>'));
       }.bind(this)
-    })
-  }
+    });
+  },
+
+  destroyPost: function(event) {
+    event.preventDefault();
+    this.post.destroy({
+      success: function() {
+        Backbone.history.navigate("/", {trigger:true});
+      }
+    });
+  },
 });

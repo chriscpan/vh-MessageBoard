@@ -29,7 +29,11 @@
   border-radius: 5px;
 }
 
-
 .nav-link:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:visited {
   color: white;
 }
